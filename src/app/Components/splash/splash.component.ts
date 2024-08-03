@@ -18,9 +18,9 @@ export class SplashComponent implements OnInit {
       this.loading = false;
       
       //wait until Animation Done
-      setTimeout(() => {
-        this.router.navigate(['/home/workspace'])
-      }, 900);
+      // setTimeout(() => {
+      //   this.router.navigate(['/home/workspace'])
+      // }, 900);
 
     }, 5000);
   }

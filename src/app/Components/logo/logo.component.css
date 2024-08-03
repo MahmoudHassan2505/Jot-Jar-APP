@@ -16,5 +16,9 @@
   top: 48%;
   right: 16%;
   transform: translate(0%, -50%);
-  animation: rotate 2s linear infinite; /* Added animation */
+   /* Added animation */
+}
+
+.animation{
+  animation: rotate 2s linear infinite;
 }
