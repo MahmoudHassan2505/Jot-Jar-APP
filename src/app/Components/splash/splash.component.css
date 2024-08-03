@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .logo {
+  position: relative;
+}
+.container .icon {
+  position: absolute;
+  top: 48%;
+  right: 16%;
+  transform: translate(0%, -50%);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(0%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(0%, -50%) rotate(360deg);
+  }
+}

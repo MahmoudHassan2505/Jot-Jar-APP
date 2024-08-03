@@ -1,0 +1,98 @@
+{
+    "work-spaces": [
+        {
+            "id": 1,
+            "name": "Self Study"
+        },
+        {
+            "id": 2,
+            "name": "University"
+        }
+    ],
+    "tasks": [
+        {
+            "id": 1,
+            "name": "Programming",
+            "workSpace": 1
+        },
+        {
+            "id": 2,
+            "name": "FrameWorks",
+            "workSpace": 1
+        }
+    ],
+    "task-type": [
+        {
+            "id": 1,
+            "name": "Text"
+        },
+        {
+            "id": 1,
+            "name": "List"
+        }
+    ],
+    "task-item": [
+        {
+            "id": 1,
+            "order": 1,
+            "task": 1,
+            "Type": 1,
+            "content": "C++",
+            "completed": true
+        },
+        {
+            "id": 2,
+            "order": 2,
+            "task": 1,
+            "Type": 1,
+            "content": "Java",
+            "completed": false
+        },
+        {
+            "id": 3,
+            "order": 3,
+            "task": 1,
+            "Type": 1,
+            "content": "TypeScript",
+            "completed": false
+        },
+        {
+            "id": 4,
+            "order": 4,
+            "task": 1,
+            "Type": 2,
+            "content": "Ready to start design Pattern"
+        },
+        {
+            "id": 5,
+            "order": 1,
+            "task": 1,
+            "Type": 1,
+            "content": "Selenium",
+            "completed": false
+        },
+        {
+            "id": 6,
+            "order": 2,
+            "task": 1,
+            "Type": 1,
+            "content": "Anfgular",
+            "completed": false
+        },
+        {
+            "id": 7,
+            "order": 3,
+            "task": 1,
+            "Type": 1,
+            "content": "Spring",
+            "completed": false
+        },
+        {
+            "id": 8,
+            "order": 4,
+            "task": 1,
+            "Type": 2,
+            "content": "Ready to start Full Stack Project"
+        }
+    ]
+}
