@@ -1,25 +1,22 @@
+@keyframes disappear {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(15);
+    opacity: 0;
+  }
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-.container .logo {
-  position: relative;
-}
-.container .icon {
-  position: absolute;
-  top: 48%;
-  right: 16%;
-  transform: translate(0%, -50%);
-  animation: rotate 2s linear infinite;
+  transition: all 1s ease-out;
 }
 
-@keyframes rotate {
-  from {
-    transform: translate(0%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(0%, -50%) rotate(360deg);
-  }
+.container.disappear {
+  animation: disappear 1s forwards;
 }

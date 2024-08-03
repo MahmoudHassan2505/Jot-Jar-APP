@@ -1,0 +1,20 @@
+@keyframes rotate {
+  from {
+    transform: translate(0%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(0%, -50%) rotate(360deg);
+  }
+}
+
+.logo {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 48%;
+  right: 16%;
+  transform: translate(0%, -50%);
+  animation: rotate 2s linear infinite; /* Added animation */
+}

@@ -2,21 +2,33 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SplashComponent } from './Components/splash/splash.component';
 import { NotFoundComponent } from './Components/not-found/not-found.component';
+import { HomeComponent } from './Components/home/home.component';
+import { WorkSpaceComponent } from './Components/work-space/work-space.component';
 
 const routes: Routes = [
   {
-    path:'',
-    redirectTo:'/splash',
-    pathMatch:'full' //mathc full path
+    path: 'home',
+    component: HomeComponent,
+    children: [
+      {
+        path: 'workspace',
+        component: WorkSpaceComponent
+      }
+    ]
   },
   {
-    path:"splash",
-    component:SplashComponent
+    path: '',
+    redirectTo: '/splash',
+    pathMatch: 'full' // match full path
   },
   {
-    path:"**",
-    component:NotFoundComponent
-  }
+    path: 'splash',
+    component: SplashComponent
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
+  },
 ];
 
 @NgModule({
