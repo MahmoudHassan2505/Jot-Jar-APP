@@ -4,6 +4,7 @@ import { SplashComponent } from './Components/splash/splash.component';
 import { NotFoundComponent } from './Components/not-found/not-found.component';
 import { HomeComponent } from './Components/home/home.component';
 import { WorkSpaceComponent } from './Components/work-space/work-space.component';
+import { AllNoteComponent } from './Components/all-note/all-note.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
       {
         path: 'workspace',
         component: WorkSpaceComponent
+      },{
+        path:'allnotes',
+        component:AllNoteComponent
       }
     ]
   },

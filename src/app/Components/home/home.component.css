@@ -1,0 +1,57 @@
+.home {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  height: 100vh;
+}
+.side {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+.side .logo {
+  padding: 20px 0;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.side .divider {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  border-color: #333333;
+}
+.side .nav {
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.side .nav p {
+  color: #a0a0a0;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.side .nav ul li {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.side .nav ul li a {
+  display: flex;
+  font-weight: 500;
+  width: 100%;
+  padding: 5px 20px;
+  font-size: 17px;
+  align-items: center;
+}
+.active {
+  background-color: #333333;
+  color: white;
+  border-radius: 20px;
+}
+.side .nav ul i {
+  margin-right: 15px;
+}
+.content {
+  background-color: #ffffff;
+}

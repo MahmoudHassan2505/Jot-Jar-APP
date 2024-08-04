@@ -1,2 +1,37 @@
-<div class="header">header</div>
-<router-outlet></router-outlet>
+<div class="home">
+    <div class="side">
+        <div class="logo">
+            <app-logo [isLoading]="true"></app-logo>
+        </div>
+        <hr class="divider">
+        <div class="nav">
+            <p>Quick links</p>
+            <ul id="nav-list">
+                <li>
+                    <a routerLink="/home/workspace"
+                        routerLinkActive="active"> <i
+                            class="fa-regular fa-file-lines"></i><span>WorkSpaces</span></a>
+                </li>
+                <li>
+
+                    <a routerLink="/home/allnotes"
+                        routerLinkActive="active"> <i
+                            class="fas fa-tasks"></i><span>All notes</span></a>
+                </li>
+                <li>
+
+                    <a href><i
+                            class="fa-regular fa-bell"></i><span>Reminders</span></a>
+                </li>
+                <li>
+
+                    <a href><i
+                            class="fa-regular fa-heart"></i><span>Favourit</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

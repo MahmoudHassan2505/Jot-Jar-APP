@@ -16,7 +16,9 @@
   height: 100vh;
   transition: all 1s ease-out;
 }
-
+.applogo {
+  width: 40%;
+}
 .container.disappear {
   animation: disappear 1s forwards;
 }

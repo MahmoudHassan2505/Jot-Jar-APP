@@ -12,16 +12,16 @@ export class SplashComponent implements OnInit {
   constructor(private router:Router){}
 
   ngOnInit() {
-    // Simulate loading completion after 5 seconds
-    setTimeout(() => {
+      // Simulate loading completion after 5 seconds
+      setTimeout(() => {
 
-      this.loading = false;
-      
-      //wait until Animation Done
-      // setTimeout(() => {
-      //   this.router.navigate(['/home/workspace'])
-      // }, 900);
+        this.loading = false;
+        
+        // wait until Animation Done
+        setTimeout(() => {
+          this.router.navigate(['/home/workspace'])
+        }, 900);
 
-    }, 5000);
+      }, 5000);
   }
 }
